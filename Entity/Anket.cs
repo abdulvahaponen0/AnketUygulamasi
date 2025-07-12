@@ -17,5 +17,6 @@ namespace Entity
         [DataType(DataType.Date)]
         public DateTime? Tarih { get; set; }
         public ICollection<Sorular>? sorulars { get; set; }
+        public ICollection<Kullanici>? kullanicis { get; set; }
     }
 }

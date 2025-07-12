@@ -1,5 +1,6 @@
 using DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Servis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AnketContext>(options=>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IAnketRepository,AnketRepository>();
+builder.Services.AddScoped<IAdmin,Admin>();
+builder.Services.AddScoped<IKullaniciServis,KullaniciServis>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

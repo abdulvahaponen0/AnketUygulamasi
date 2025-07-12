@@ -17,5 +17,7 @@ namespace DataAccess
         public DbSet<Anket> ankets { get; set; }
         public DbSet<Cevaplar> cevaplars { get; set; }
         public DbSet<Sorular> sorulars { get; set; }
+        public DbSet<Kullanici> kullanicis { get; set; }
+        public DbSet<KullaniciCevaplari> kullaniciCevaplaris { get; set; }
     }
 }

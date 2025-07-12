@@ -16,5 +16,6 @@ namespace Entity
         public int AnketId { get; set; }
         public Anket? Anket { get; set; }
         public ICollection<Cevaplar>? cevaplars { get; set; }
+        public KullaniciCevaplari? KullaniciCevaplari { get; set; }
     }
 }

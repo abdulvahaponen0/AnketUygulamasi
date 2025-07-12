@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace Servis
 {
-    public interface IAnketRepository
+    public interface IKullaniciServis
     {
-        public Task<(bool success, string mesaj)> AnketOlustur(Anket anket);
         public Task<(bool success, string mesaj)> OylamaYap(KullaniciCevaplari kullaniciCevaplari);
-        public Task<(List<Anket> anket1, bool success, string mesaj)> SonuclariGöster();
+        public Task<(List<Anket> ankets, bool success, string mesaj)> SonuclariGoster();
     }
 }
