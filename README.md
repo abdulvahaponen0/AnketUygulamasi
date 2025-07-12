@@ -1,6 +1,6 @@
 # AnketUygulamasi 🎯
 
-Bu proje, kullanıcıların çevrimiçi anketlere katılabildiği, cevapları oylayabildiği ve sonuçları görüntüleyebildiği basit bir **.NET Core Web API** uygulamasıdır.
+Bu proje, kullanıcıların çevrimiçi anketlere katılabildiği, cevapları oylayabildiği ve sonuçları görüntüleyebildiği bir **.NET Core Web API** uygulamasıdır.
 
 ## 🔧 Teknolojiler
 
