@@ -1,75 +1,75 @@
-# AnketUygulamasi 🎯
+📊 Survey Application API (AnketUygulamasiAPI)
+A RESTful Web API for creating, managing, and participating in surveys. Built using ASP.NET Core with Entity Framework Core and SQL Server for data storage.
 
-Bu proje, kullanıcıların çevrimiçi anketlere katılabildiği, cevapları oylayabildiği ve sonuçları görüntüleyebildiği bir **.NET Core Web API** uygulamasıdır.
+✨ Features
+📝 Create, read, update, and delete surveys and their questions
 
-## 🔧 Teknolojiler
+❓ Support for multiple question types (e.g., multiple choice, text input)
 
-- ASP.NET Core Web API
-- Entity Framework Core
-- MS SQL Server (EF ile)
-- xUnit & Moq (Birim Testleri)
-- RESTful mimari
-- GitHub Actions (varsa CI/CD)
+📥 User responses management and validation
 
-## 📁 Proje Yapısı
+🔄 RESTful API design principles applied
 
-AnketUygulamasi/
-├── Controllers/ # API controller sınıfları
-├── DataAccess/ # Veritabanı context'i ve repository sınıfları
-├── Entity/ # Model/varlık sınıfları (Anket, Soru, Cevap, Kullanici vb.)
-├── Servis/ # Servis katmanı (iş kuralları)
-├── AnketTest/ # xUnit ile birim testleri
-└── Program.cs # Giriş noktası
+✅ Unit tests with xUnit and Moq for key components
+
+🗄️ Database migrations with EF Core
+
+🛠️ Technologies Used
+⚙️ ASP.NET Core Web API
+
+🗃️ Entity Framework Core
+
+🖥️ SQL Server
+
+🧪 xUnit, Moq (for unit testing)
+
+🚀 Getting Started
+📋 Prerequisites
+.NET SDK 6.0 or later
+
+SQL Server (local or remote instance)
+
+📥 Installation
+Clone the repository:
 
 bash
 Kopyala
 Düzenle
+git clone https://github.com/avonen22/AnketUygulamasi.git
+Configure the connection string in appsettings.json to point to your SQL Server instance.
 
-## 🚀 Başlarken
-
-Projeyi çalıştırmak için aşağıdaki adımları izleyin:
-
-### 1. Projeyi Klonlayın
-```bash
-git clone https://github.com/abdulvahaponen0/AnketUygulamasi.git
-cd AnketUygulamasi
-2. Bağımlılıkları Yükleyin
-bash
-Kopyala
-Düzenle
-dotnet restore
-3. Veritabanı Oluşturun
-appsettings.json dosyasındaki bağlantı cümlesini kendi ortamınıza göre güncelleyin ve ardından:
+Apply database migrations:
 
 bash
 Kopyala
 Düzenle
 dotnet ef database update
-4. Uygulamayı Çalıştırın
+Run the application:
+
 bash
 Kopyala
 Düzenle
 dotnet run
-API varsayılan olarak https://localhost:5001 veya http://localhost:5000 adreslerinden çalışacaktır.
+The API will be available at https://localhost:{port}/api
 
-🧪 Test Çalıştırma
+📡 API Endpoints
+/api/surveys - Manage surveys
+
+/api/questions - Manage questions related to surveys
+
+/api/responses - Submit and retrieve user responses
+
+(You can expand this section with specific request/response examples.)
+
+🧪 Testing
+Run unit tests using the following command:
+
 bash
 Kopyala
 Düzenle
-cd AnketTest
 dotnet test
-🧱 Özellikler
-✅ Anket oluşturma (Admin)
+🤝 Contributing
+Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-✅ Kullanıcılar için oylama
-
-✅ Anket sonuçlarını görüntüleme
-
-✅ Hata yönetimi ve başarılı/başarısız mesajları
-
-✅ Birim testleri ile güvenilirlik
-
-📬 İletişim
-Geliştirici: Abdulvahap Önen
-📧 E-posta: abdulvahaponen0@gmail.com
-🔗 GitHub: github.com/abdulvahaponen0
+📄 License
+This project is licensed under the MIT License.
